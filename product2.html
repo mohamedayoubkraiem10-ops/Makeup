@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Product Details</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="headerContainer">
+        <div class="header">
+            <h2 class="logo">Glow Beauty</h2>
+            <div class="headerLinks">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="#">Products</a>
+                <button class="btn">Cart 🛒 (<span id="cartCount">0</span>)</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRODUCT DETAILS -->
+    <div class="productDetails">
+
+        <div class="productImg">
+            <img src="images/Silk Foundation.jpg">
+        </div>  
+
+        <div class="productInfo">
+            <h1>Silk Foundation</h1>
+            <p class="price"></p>
+
+            <p class="desc">
+                Long-lasting matte lipstick with intense color and smooth texture.
+                Perfect for daily wear and special occasions.
+            </p>
+
+            <div class="quantity">
+                <button onclick="changeQty(-1)">-</button>
+                <span id="qty">1</span>
+                <button onclick="changeQty(1)">+</button>
+            </div>
+
+            <button class="btn bigBtn" onclick="addToCart()">Add to Cart 🛒</button>
+        </div>
+
+    </div>
+
+    <!-- RELATED PRODUCTS -->
+    <div class="related">
+        <h2>Related Products</h2>
+
+        <div class="relatedGrid">
+            <div class="card">
+                <img src="images/Eyeshadow Kit.jpg">
+                <h3>Eyeshadow Kit</h3>
+            </div>
+            <div class="card">
+                <img src="images/Gloss Lip Oil.jpg">
+                <h3>Gloss Lip Oil</h3>
+            </div>
+            <div class="card">
+                <img src="images/Matte Powder.jpg">
+                <h3>Matte Powder</h3>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let count = 0;
+        let qty = 1;
+
+        function changeQty(num) {
+            qty += num;
+            if (qty < 1) qty = 1;
+            document.getElementById("qty").innerText = qty;
+        }
+
+        function addToCart() {
+            count += qty;
+            document.getElementById("cartCount").innerText = count;
+        }
+    </script>
+    <h2 class="review-title">Customer Reviews ⭐</h2>
+
+    <div class="reviews-box">
+
+        <!-- ⭐ Stars -->
+        <div class="star-rating">
+            <span onclick="rate(1)">★</span>
+            <span onclick="rate(2)">★</span>
+            <span onclick="rate(3)">★</span>
+            <span onclick="rate(4)">★</span>
+            <span onclick="rate(5)">★</span>
+        </div>
+
+        <textarea id="reviewText" placeholder="Write your review..."></textarea>
+        <button onclick="addReview()">Submit Review</button>
+
+        <div id="reviewsList"></div>
+
+    </div>
+</body>
+<body onload="loadReviews()"></body>
+</html>
+    

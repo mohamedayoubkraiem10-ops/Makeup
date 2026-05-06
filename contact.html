@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact - Glow Beauty</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="headerContainer">
+        <div class="header">
+            <h2 class="logo">Glow Beauty</h2>
+            <div class="headerLinks">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="product.html">Products</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html" class="btn">Sign In</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT TITLE -->
+    <div class="contactTitle">
+        <h1>Contact Us 💌</h1>
+        <p>We would love to hear from you</p>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <div class="contactContainer">
+
+        <div class="contactInfo">
+            <h2>Get in touch</h2>
+            <p>Email: glowbeauty@email.com</p>
+            <p>Phone: +216 51 976 116</p>
+            <p>Address: Tunisia</p>
+        </div>
+
+        <form class="contactForm" onsubmit="sendMsg(event)">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button class="btn">Send Message</button>
+        </form>
+
+    </div>
+
+    <script>
+        function sendMsg(e) {
+            e.preventDefault();
+            alert("Message sent successfully 💖");
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign In - Glow Beauty</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="headerContainer">
+        <div class="header">
+            <h2 class="logo">Glow Beauty</h2>
+            <div class="headerLinks">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="product.html">Products</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html" class="btn">Sign In</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOGIN BOX -->
+    <div class="loginContainer">
+        <div class="loginBox">
+            <h1>Welcome Back 💖</h1>
+
+            <form onsubmit="login(event)">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+
+                <button class="btn">Sign In</button>
+            </form>
+
+            <p id="msg"></p>
+        </div>
+    </div>
+
+    <script>
+        function login(e) {
+            e.preventDefault();
+            document.getElementById("msg").innerText = "Login Successful 🎉";
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

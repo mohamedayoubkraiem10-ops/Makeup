@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Shop - Glow Beauty</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="headerContainer">
+        <div class="header">
+            <h2 class="logo">Glow Beauty</h2>
+            <div class="headerLinks">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="product.html">Products</a>
+                <a href="contact.html">Contact</a>
+                <button class="btn">Cart 🛒 (<span id="cartCount">0</span>)</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE TITLE -->
+    <div class="shopTitle">
+        <h1>Our Makeup Shop 💄</h1>
+        <p>Choose your favorite beauty products</p>
+    </div>
+
+    <!-- FILTER BUTTONS -->
+    <div class="filters">
+        <button onclick="filterProducts('all')" class="btn">All</button>
+        <button onclick="filterProducts('lips')" class="btn">Lips</button>
+        <button onclick="filterProducts('face')" class="btn">Face</button>
+        <button onclick="filterProducts('eyes')" class="btn">Eyes</button>
+
+    </div>
+
+    <!-- PRODUCTS GRID -->
+    <div class="shopGrid">
+
+        <div class="product lips">
+            <img src="images/Luxury Lipstick.jpg">
+            <h3>Luxury Lipstick</h3>
+            <p>45DT</p>
+            <a href="product.html" class="btn">View Product</a>
+        </div>
+
+        <div class="product face">
+            <img src="images/Silk Foundation.jpg">
+            <h3>Silk Foundation</h3>
+            <p>30DT</p>
+            <a href="product2.html" class="btn">View Product</a>
+        </div>
+
+        <div class="product eyes">
+            <img src="images/Eyeshadow Kit.jpg">
+            <h3>Eyeshadow Kit</h3>
+            <p>20DT</p>
+            <a href="product3.html" class="btn">View Product</a>
+        </div>
+
+        <div class="product face">
+            <img src="images/Matte Powder.jpg">
+            <h3>Matte Powder</h3>
+            <p>50Dt</p>
+            <a href="product4.html" class="btn">View Product</a>
+        </div>
+
+        <div class="product lips">
+            <img src="images/Gloss Lip Oil.jpg">
+            <h3>Gloss Lip Oil</h3>
+            <p>15DT</p>
+            <a href="product5.html" class="btn">View Product</a>
+        </div>
+
+        <div class="product eyes">
+            <img src="images/Mascara Pro.jpg">
+            <h3>Mascara Pro</h3>
+            <p>32DT</p>
+            <a href="product6.html" class="btn">View Product</a>
+        </div>
+        <div class="product eyes">
+            <img src="images/parfum.jpg">
+            <h3>parfum</h3>
+            <p>299DT</p>
+            <a href="product7.html" class="btn">View Product</a>
+        </div>
+        <div class="product eyes">
+            <img src="images/Love Chemistry.jpg">
+            <h3>Love Chemistry</h3>
+            <p>399DT</p>
+            <a href="product8.html" class="btn">View Product</a>
+        </div>
+         <div class="product eyes">
+            <img src="images/frshness.jpg">
+            <h3>Frshness</h3>
+            <p>399DT</p>
+            <a href="product9.html" class="btn">View Product</a>
+        </div>
+    </div>
+
+    <script>
+        let count = 0;
+
+        function addToCart() {
+            count++;
+            document.getElementById("cartCount").innerText = count;
+        }
+
+        /* FILTER FUNCTION */
+        function filterProducts(category) {
+            let products = document.querySelectorAll(".product");
+
+            products.forEach(product => {
+                if (category === "all") {
+                    product.style.display = "block";
+                } else {
+                    if (product.classList.contains(category))
+                        product.style.display = "block";
+                    else
+                        product.style.display = "none";
+                }
+            })
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

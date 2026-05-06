@@ -1,0 +1,323 @@
+body {
+    font-family: Poppins;
+    margin: 0;
+    background: #fff0f6;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #ff4d88;
+    color: white;
+}
+
+.headerLinks a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+}
+
+.btn {
+    background: white;
+    color: #ff4d88;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* LANDING */
+.landingPage {
+    display: flex;
+    padding: 60px 80px;
+    align-items: center;
+}
+
+.slogan {
+    font-size: 45px;
+    color: #ff4d88
+}
+
+/* TRENDING */
+.trendingContainer {
+    padding: 60px 80px;
+}
+
+.trendingCard {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.price {
+    /* ⭐ Reviews bottom + centered */
+.review-title{
+    text-align:center;
+    margin-top:80px;
+}
+
+.reviews-box{
+    width:50%;
+    margin:20px auto 80px auto; /* auto = center */
+    text-align:center;
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.reviews-box textarea{
+    width:90%;
+    height:100px;
+    padding:10px;
+    border-radius:10px;
+    border:1px solid #ccc;
+}
+
+.reviews-box button{
+    margin-top:15px;
+    padding:10px 25px;
+    background:#ff4f81;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+#reviewsList{
+    margin-top:20px;
+    text-align:left;
+}
+    font-weight: bold
+}
+
+/* MOST */
+.mostContainer {
+    padding: 60px 80px;
+}
+
+.mostCards {
+    display: flex;
+    gap: 20px;
+}
+
+/* CATEGORIES */
+.categoryContainer {
+    padding: 60px;
+    text-align: center;
+}
+
+.categoryCards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cat {
+    background: #ff4d88;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 20px;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    background: #ff4d88;
+    color: white;
+    padding: 20px;
+}
+
+.shopTitle {
+    text-align: center;
+    padding: 40px;
+}
+
+.filters {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.shopGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 40px 80px;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* PRODUCT DETAILS */
+.productDetails {
+    display: flex;
+    gap: 50px;
+    padding: 60px 80px;
+    align-items: center;
+}
+
+.productImg img {
+    width: 400px;
+    border-radius: 20px;
+}
+
+.productInfo {
+    max-width: 500px;
+}
+
+.desc {
+    margin: 20px 0;
+}
+
+.quantity {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.quantity button {
+    padding: 10px 15px;
+    border: none;
+    background: #ff4d88;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.bigBtn {
+    padding: 15px 40px;
+    font-size: 18px;
+}
+
+/* RELATED */
+.related {
+    padding: 60px 80px;
+}
+
+.relatedGrid {
+    display: flex;
+    gap: 20px;
+}
+
+/* CONTACT PAGE */
+.contactTitle {
+    text-align: center;
+    padding: 40px;
+}
+
+.contactContainer {
+    display: flex;
+    gap: 40px;
+    padding: 60px 80px;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 400px;
+}
+
+.contactForm input,
+.contactForm textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+/* LOGIN */
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.loginBox {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.loginBox form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.loginBox input {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}/* ⭐ Reviews bottom + centered */
+.review-title{
+    text-align:center;
+    margin-top:80px;
+}
+
+.reviews-box{
+    width:50%;
+    margin:20px auto 80px auto; /* auto = center */
+    text-align:center;
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.reviews-box textarea{
+    width:90%;
+    height:100px;
+    padding:10px;
+    border-radius:10px;
+    border:1px solid #ccc;
+}
+
+.reviews-box button{
+    margin-top:15px;
+    padding:10px 25px;
+    background:#ff4f81;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+#reviewsList{
+    margin-top:20px;
+    text-align:left;
+}/* ⭐ Stars Style */
+.star-rating{
+    font-size:30px;
+    color:#ccc;
+    cursor:pointer;
+    margin-bottom:10px;
+}
+
+.star-rating span:hover,
+.star-rating span.active{
+    color:gold;
+}
