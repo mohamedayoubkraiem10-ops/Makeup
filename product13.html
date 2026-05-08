@@ -28,11 +28,11 @@
     <div class="productDetails">
 
         <div class="productImg">
-            <img src="images/Matte Powder.jpg">
-        </div>  
+            <img src="picture/Nude Liquide Lipstick.jpg">
+        </div>
 
         <div class="productInfo">
-            <h1>Matte Powder</h1>
+            <h1>Nude Liquide Lipstick</h1>
             <p class="price"></p>
 
             <p class="desc">
@@ -56,56 +56,59 @@
         <h2>Related Products</h2>
 
         <div class="relatedGrid">
-            <div class="card">
-                <img src="picture/Matte Powder Pro.jpg">
-                <h3>Matte Powder Pro</h3>
+            <div class="card" style="width:250px; border-radius:12px; overflow:hidden;">
+
+                <img src="picture/Lip Gloss Boss.jpg" style="width:100%; height:200px; object-fit:cover;">
+
+                <h3>YANY Beauty boss</h3>
+
             </div>
             <div class="card">
-                <img src="picture/Black Matte Powder.jpg">
-                <h3>Black Matte Powder</h3>
+                <img src="picture/Papper Spice Lip.jpg" style="width:100%; height:200px; object-fit:cover;">
+                <h3>Papper Spice Lip</h3>
             </div>
             <div class="card">
-                <img src="picture/Premium Matte Powder.jpg">
-                <h3>Premium Matte Powder</h3>
+                <img src="picture/Lip Gloss Bonita.jpg" style="width:100%; height:200px; object-fit:cover;">
+                <h3>Lip Gloss Bonita</h3>
             </div>
         </div>
-    </div>
 
-    <script>
-        let count = 0;
-        let qty = 1;
+        <script>
+            let count = 0;
+            let qty = 1;
 
-        function changeQty(num) {
-            qty += num;
-            if (qty < 1) qty = 1;
-            document.getElementById("qty").innerText = qty;
-        }
+            function changeQty(num) {
+                qty += num;
+                if (qty < 1) qty = 1;
+                document.getElementById("qty").innerText = qty;
+            }
 
-        function addToCart() {
-            count += qty;
-            document.getElementById("cartCount").innerText = count;
-        }
-    </script>
-    <h2 class="review-title">Customer Reviews ⭐</h2>
+            function addToCart() {
+                count += qty;
+                document.getElementById("cartCount").innerText = count;
+            }
+        </script>
+        <h2 class="review-title">Customer Reviews ⭐</h2>
 
-    <div class="reviews-box">
+        <div class="reviews-box">
 
-        <!-- ⭐ Stars -->
-        <div class="star-rating">
-            <span onclick="rate(1)">★</span>
-            <span onclick="rate(2)">★</span>
-            <span onclick="rate(3)">★</span>
-            <span onclick="rate(4)">★</span>
-            <span onclick="rate(5)">★</span>
+            <!-- ⭐ Stars -->
+            <div class="star-rating">
+                <span onclick="rate(1)">★</span>
+                <span onclick="rate(2)">★</span>
+                <span onclick="rate(3)">★</span>
+                <span onclick="rate(4)">★</span>
+                <span onclick="rate(5)">★</span>
+            </div>
+
+            <textarea id="reviewText" placeholder="Write your review..."></textarea>
+            <button onclick="addReview()">Submit Review</button>
+
+            <div id="reviewsList"></div>
+
         </div>
-
-        <textarea id="reviewText" placeholder="Write your review..."></textarea>
-        <button onclick="addReview()">Submit Review</button>
-
-        <div id="reviewsList"></div>
-
-    </div>
 </body>
+
 <body onload="loadReviews()"></body>
+
 </html>
-    
